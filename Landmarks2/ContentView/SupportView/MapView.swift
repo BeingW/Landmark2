@@ -11,7 +11,7 @@ import MapKit
 //UIViewRepresentable 은 SwiftUI 와 UIKit 와 연동하게 해준다.
 //UIViewRepresentable 는 두가지 메서드를 반드시 요구한다.
 //1.makeUIVew(context): UIView 를 만드는
-//2.updateUIView(context):
+//2.updateUIView(context): view 를 확인하고 변경된 사항을 적용하는 것
 struct MapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
